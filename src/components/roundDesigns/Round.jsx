@@ -5,16 +5,14 @@ import RoundThree from './RoundThree';
 import RoundFour from './RoundFour';
 import RoundFive from './RoundFive';
 
-const Round = () => {
-  return (
-    <>
-      <RoundOne />
-      <RoundTwo />
-      <RoundThree />
-      <RoundFour />
-      <RoundFive />
-    </>
-  );
-};
+const Round = () => (
+  <>
+    <RoundOne />
+    <RoundTwo />
+    <RoundThree />
+    <RoundFour />
+    <RoundFive />
+  </>
+);
 
 export default Round;

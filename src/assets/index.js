@@ -1,3 +1,3 @@
-import bannerImg from "./images/bannerImg.svg"
+import bannerImg from './images/bannerImg.svg';
 
-export { bannerImg }
+export { bannerImg };

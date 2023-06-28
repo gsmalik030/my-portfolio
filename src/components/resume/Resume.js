@@ -1,4 +1,4 @@
-import React, {  useState } from 'react'
+import React, { useState } from 'react';
 import Title from '../home/Title';
 import Education from './Education';
 import Skills from './Skills';
@@ -6,8 +6,8 @@ import Skills from './Skills';
 // import Experience from "./Experience"
 
 const Resume = () => {
-   const [educationData, setEducationData] = useState(true);
-   const [skillData, setSkillData] = useState(false);
+  const [educationData, setEducationData] = useState(true);
+  const [skillData, setSkillData] = useState(false);
   //  const [experienceData, setExperienceData] = useState(false);
   //  const [achievementData, setAchievementData] = useState(false);
   return (
@@ -18,29 +18,27 @@ const Resume = () => {
       <div>
         <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
           <li
-            onClick={() =>
-              setEducationData(true) &
-              setSkillData(false) &
-              setExperienceData(false) &
-              setAchievementData(false)
+            onClick={() => setEducationData(true)
+              & setSkillData(false)
+              // & setExperienceData(false)
+              // & setAchievementData(false)
             }
             className={`${
               educationData
-                ? "border-designColor rounded-lg"
-                : "border-transparent"
+                ? 'border-designColor rounded-lg'
+                : 'border-transparent'
             } resumeLi cursor-pointer`}
           >
             Education
           </li>
           <li
-            onClick={() =>
-              setEducationData(false) &
-              setSkillData(true) &
-              setExperienceData(false) &
-              setAchievementData(false)
+            onClick={() => setEducationData(false)
+              & setSkillData(true)
+              // & setExperienceData(false)
+              // & setAchievementData(false)
             }
             className={`${
-              skillData ? "border-designColor rounded-lg" : "border-transparent"
+              skillData ? 'border-designColor rounded-lg' : 'border-transparent'
             } resumeLi cursor-pointer`}
           >
             Skills
@@ -81,9 +79,9 @@ const Resume = () => {
       {skillData && <Skills />}
       {/* {achievementData && <Achievement />}
       {experienceData && <Experience />} */}
- 
+
     </section>
   );
-}
+};
 
-export default Resume
+export default Resume;

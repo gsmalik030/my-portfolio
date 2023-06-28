@@ -1,15 +1,15 @@
-import React, { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
-import { FaUser, FaEnvelope } from "react-icons/fa";
-import { IoIosPaper } from "react-icons/io";
-import { MdWork, MdOutlineClose } from "react-icons/md";
-import { BsTelephonePlusFill } from "react-icons/bs";
-import Left from "./components/home/Left";
-import About from "./components/about/About";
-import Resume from "./components/resume/Resume";
-import Projects from "./components/projects/Projects";
-import Contact from "./components/contact/Contact";
-import Sidenav from "./components/home/sidenav/Sidenav";
+import React, { useEffect, useRef, useState } from 'react';
+import { motion } from 'framer-motion';
+import { FaUser, FaEnvelope } from 'react-icons/fa';
+import { IoIosPaper } from 'react-icons/io';
+import { MdWork, MdOutlineClose } from 'react-icons/md';
+import { BsTelephonePlusFill } from 'react-icons/bs';
+import Left from './components/home/Left';
+import About from './components/about/About';
+import Resume from './components/resume/Resume';
+import Projects from './components/projects/Projects';
+import Contact from './components/contact/Contact';
+import Sidenav from './components/home/sidenav/Sidenav';
 
 const Home = () => {
   const [about, setAbout] = useState(true);
@@ -20,7 +20,7 @@ const Home = () => {
   const ref = useRef();
 
   useEffect(() => {
-    document.body.addEventListener("click", (e) => {
+    document.body.addEventListener('click', (e) => {
       if (e.target.contains(ref.current)) {
         setSidenav(false);
       }
@@ -28,7 +28,7 @@ const Home = () => {
   }, []);
 
   const handleClick = () => {
-    window.location.href = `tel:${"+27728331515"}`;
+    window.location.href = `tel:${'+27728331515'}`;
   };
 
   return (
@@ -65,16 +65,14 @@ const Home = () => {
         <div className="w-full h-80 bg-bodyColor rounded-3xl flex flex-col items-center justify-between py-6">
           {/* About Icon */}
           <span
-            onClick={() =>
-              setAbout(true) &
-              setResume(false) &
-              setProjects(false) &
-              setContact(false)
-            }
+            onClick={() => setAbout(true)
+              & setResume(false)
+              & setProjects(false)
+              & setContact(false)}
             className={`${
               about
-                ? "text-designColor"
-                : "w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group"
+                ? 'text-designColor'
+                : 'w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group'
             } w-full h-6 text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group`}
             // className="w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group"
           >
@@ -85,16 +83,14 @@ const Home = () => {
           </span>
           {/* Resume Icon */}
           <span
-            onClick={() =>
-              setAbout(false) &
-              setResume(true) &
-              setProjects(false) &
-              setContact(false)
-            }
+            onClick={() => setAbout(false)
+              & setResume(true)
+              & setProjects(false)
+              & setContact(false)}
             className={`${
               resume
-                ? "text-designColor"
-                : "w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group"
+                ? 'text-designColor'
+                : 'w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group'
             } w-full h-6 text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group`}
           >
             <IoIosPaper />
@@ -104,16 +100,14 @@ const Home = () => {
           </span>
           {/* Project Icon */}
           <span
-            onClick={() =>
-              setAbout(false) &
-              setResume(false) &
-              setProjects(true) &
-              setContact(false)
-            }
+            onClick={() => setAbout(false)
+              & setResume(false)
+              & setProjects(true)
+              & setContact(false)}
             className={`${
               projects
-                ? "text-designColor"
-                : "w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group"
+                ? 'text-designColor'
+                : 'w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group'
             } w-full h-6 text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group`}
           >
             <MdWork />
@@ -124,16 +118,14 @@ const Home = () => {
 
           {/* Contact Icon */}
           <span
-            onClick={() =>
-              setAbout(false) &
-              setResume(false) &
-              setProjects(false) &
-              setContact(true)
-            }
+            onClick={() => setAbout(false)
+              & setResume(false)
+              & setProjects(false)
+              & setContact(true)}
             className={`${
               contact
-                ? "text-designColor"
-                : "w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group"
+                ? 'text-designColor'
+                : 'w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group'
             } w-full h-6 text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group`}
           >
             <FaEnvelope />
@@ -161,7 +153,7 @@ const Home = () => {
             <About />
             <Resume />
             <Projects />
-          
+
             <Contact />
           </div>
           {/* ======================== Smaller device content End ========================== */}
