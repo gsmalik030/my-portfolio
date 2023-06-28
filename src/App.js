@@ -4,12 +4,14 @@ import Home from './Home';
 
 function App() {
   return (
-    <section className="w-full h-screen font-bodyfont text-textColor bg-black relative">
-      <section className="max-w-screen-2xl h-full mx-auto flex justify-center items-center">
+    <div className="w-full lgl:h-screen font-bodyfont overflow-hidden text-textColor bg-black relative">
+      <div className="max-w-screen-2xl h-full mx-auto flex justify-center items-center">
         <Home />
-      </section>
-      <Round />
-    </section>
+      </div>
+      <div className="w-full h-full absolute top-0 left-0 z-10">
+        <Round />
+      </div>
+    </div>
   );
 }
 

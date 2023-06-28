@@ -27,7 +27,7 @@ const Left = () => {
     delaySpeed: 1000,
   });
   return (
-    <div className='w-5/12 h-full bg-bodyColor rounded-2xl'>
+    <div className="w-full lgl:w-5/12 h-full bg-bodyColor rounded-2xl shadow-testShwdow z-10">
       <div className='w-full h-3/5'>
         <img
           className='w-full h-full object-cover rounded-2xl'
