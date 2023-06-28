@@ -2,14 +2,14 @@ import React, {  useState } from 'react'
 import Title from '../home/Title';
 import Education from './Education';
 import Skills from './Skills';
-import Achievement from './Achievement';
-import Experience from "./Experience"
+// import Achievement from './Achievement';
+// import Experience from "./Experience"
 
 const Resume = () => {
    const [educationData, setEducationData] = useState(true);
    const [skillData, setSkillData] = useState(false);
-   const [experienceData, setExperienceData] = useState(false);
-   const [achievementData, setAchievementData] = useState(false);
+  //  const [experienceData, setExperienceData] = useState(false);
+  //  const [achievementData, setAchievementData] = useState(false);
   return (
     <section id="resume" className="w-full py-20 px-5 border-b-[1px] border-b-black">
       <div className="flex justify-center items-center text-center">
