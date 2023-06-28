@@ -4,7 +4,7 @@ import { BsCloudLightningFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { AiFillTwitterCircle } from 'react-icons/ai';
 import { FiMail, FiSend } from 'react-icons/fi';
-import { bannerImg } from '../../assets';
+import bannerImg from '../../assets/images/bannerImg.svg';
 import CV from '../../assets/gsmalik-cv.pdf';
 
 const Left = () => {
@@ -31,7 +31,7 @@ const Left = () => {
         <img
           className="w-full h-full object-cover rounded-2xl"
           src={bannerImg}
-          alt="Banner image"
+          alt="Banner"
         />
       </div>
       <div className="w-full h-2/5 flex flex-col justify-between">
@@ -65,13 +65,13 @@ const Left = () => {
             className="w-1/2 border-t-[1px] border-r-[1px] border-r-zinc-800 border-t-zinc-800 text-sm tracking-wide uppercase  gap-2 hover:text-designColor duration-300"
             rel="noreferrer"
           >
-            <button className="w-full h-full flex justify-center items-center gap-2">
+            <button type="button" className="w-full h-full flex justify-center items-center gap-2">
               Download CV
               {' '}
               <BsCloudLightningFill />
             </button>
           </a>
-          <button onClick={handleEmailClick} className="w-1/2 border-t-[1px] border-t-zinc-800 text-sm tracking-wide uppercase flex justify-center items-center gap-2 hover:text-designColor duration-300">
+          <button type="button" onClick={handleEmailClick} className="w-1/2 border-t-[1px] border-t-zinc-800 text-sm tracking-wide uppercase flex justify-center items-center gap-2 hover:text-designColor duration-300">
             Contact me
             {' '}
             <FiSend />

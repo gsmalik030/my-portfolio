@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const FunFactCard = ({ icon, des }) => (
   <div className="w-full">
@@ -10,5 +11,10 @@ const FunFactCard = ({ icon, des }) => (
     </div>
   </div>
 );
+
+FunFactCard.propTypes = {
+  icon: PropTypes.node.isRequired,
+  des: PropTypes.string.isRequired,
+};
 
 export default FunFactCard;

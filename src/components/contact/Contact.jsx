@@ -115,7 +115,6 @@ const Contact = () => {
                     ? 'border-red-600 focus-visible:border-red-600'
                     : 'border-zinc-600 focus-visible:border-designColor'
                 } w-full bg-transparent border-2 px-4 py-2 text-base text-gray-200 outline-none duration-300`}
-                // className="w-full bg-transparent border-2 px-4 py-2 text-base text-gray-200 border-zinc-600 focus-visible:border-designColor outline-none duration-300"
                 type="text"
                 placeholder="Full Name"
               />
@@ -144,6 +143,7 @@ const Contact = () => {
             />
             <button
               onClick={handleSend}
+              type="submit"
               className="text-base w-44 flex items-center gap-1 text-gray-200 hover:text-designColor duration-200"
             >
               Send Message

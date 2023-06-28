@@ -11,18 +11,23 @@ const Resume = () => {
   //  const [experienceData, setExperienceData] = useState(false);
   //  const [achievementData, setAchievementData] = useState(false);
   return (
-    <section id="resume" className="w-full py-20 px-5 border-b-[1px] border-b-black">
+    <section
+      id="resume"
+      className="w-full py-20 px-5 border-b-[1px] border-b-black"
+    >
       <div className="flex justify-center items-center text-center">
         <Title title="Professional Skills" des="My Resume" />
       </div>
       <div>
-        <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
-          <li
-            onClick={() => setEducationData(true)
-              & setSkillData(false)
-              // & setExperienceData(false)
-              // & setAchievementData(false)
-            }
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+          <button
+            onClick={() => {
+              setEducationData(true);
+              setSkillData(false);
+              // setExperienceData(false);
+              // setAchievementData(false);
+            }}
+            type="button"
             className={`${
               educationData
                 ? 'border-designColor rounded-lg'
@@ -30,19 +35,23 @@ const Resume = () => {
             } resumeLi cursor-pointer`}
           >
             Education
-          </li>
-          <li
-            onClick={() => setEducationData(false)
-              & setSkillData(true)
-              // & setExperienceData(false)
-              // & setAchievementData(false)
-            }
+          </button>
+
+          <button
+            onClick={() => {
+              setEducationData(false);
+              setSkillData(true);
+              // setExperienceData(false);
+              // setAchievementData(false);
+            }}
+            type="button"
             className={`${
               skillData ? 'border-designColor rounded-lg' : 'border-transparent'
             } resumeLi cursor-pointer`}
           >
             Skills
-          </li>
+          </button>
+
           {/* <li
             onClick={() =>
               setEducationData(false) &
@@ -73,13 +82,12 @@ const Resume = () => {
           >
             Achievements
           </li> */}
-        </ul>
+        </div>
       </div>
       {educationData && <Education />}
       {skillData && <Skills />}
       {/* {achievementData && <Achievement />}
       {experienceData && <Experience />} */}
-
     </section>
   );
 };
