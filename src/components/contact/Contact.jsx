@@ -51,7 +51,7 @@ const Contact = () => {
       setErrMessage(true);
     }
     if (clientName && email && EmailValidation(email) && messages) {
-      axios.post("https://getform.io/f/e18ee560-5133-4cfe-9a48-eddb6f012a9f", {
+      axios.post("https://getform.io/f/6644b7b9-212a-43ae-a3ce-db2855753e12", {
         name: clientName,
         email: email,
         message: messages,
@@ -65,7 +65,7 @@ const Contact = () => {
     }
   };
   return (
-    <div className="w-full">
+    <section id="contact" className="w-full">
       <Title title="Get" subTitle="in Touch" />
       <div className="p-6 w-full flex flex-col md:flex-row justify-between gap-4 md:gap-10 lgl:gap-20">
         <div className="w-full lgl:w-1/2">
@@ -73,13 +73,13 @@ const Contact = () => {
             <span className="bg-designColor text-gray-700 text-sm font-titleFont font-medium px-2 rounded-md flex items-center justify-center">
               Address:
             </span>
-            Muscat, Oman
+            Durban, South Africa
           </p>
           <p className="flex justify-between w-full text-lg text-[#ccc] py-4 border-b-[1px] border-b-zinc-800">
             <span className="bg-designColor text-gray-700 text-sm font-titleFont font-medium px-2 rounded-md flex items-center justify-center">
               Phone:
             </span>
-            +968 97859628
+            +27 72 833 1515
           </p>
         </div>
         <div className="w-full lgl:w-1/2">
@@ -87,7 +87,7 @@ const Contact = () => {
             <span className="bg-designColor text-gray-700 text-sm font-titleFont font-medium px-2 rounded-md flex items-center justify-center">
               Email:
             </span>
-            noor.jsdivs@gmail.com
+            gsmalik030@gmail.com
           </p>
           <p className="flex justify-between w-full text-lg text-[#ccc] py-4 border-b-[1px] border-b-zinc-800">
             <span className="bg-designColor text-gray-700 text-sm font-titleFont font-medium px-2 rounded-md flex items-center justify-center">
@@ -106,7 +106,7 @@ const Contact = () => {
         ) : (
           <form
             id="form"
-            action="https://getform.io/f/e18ee560-5133-4cfe-9a48-eddb6f012a9f"
+            action="https://getform.io/f/6644b7b9-212a-43ae-a3ce-db2855753e12"
             method="POST"
             className="p-6 flex flex-col gap-6"
           >
@@ -158,7 +158,7 @@ const Contact = () => {
           </form>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 
