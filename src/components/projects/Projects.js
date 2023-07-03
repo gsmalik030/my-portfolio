@@ -15,7 +15,7 @@ const Projects = () => (
   >
     <div className="flex justify-center items-center text-center">
       <Title
-        title="VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK"
+        title="My Projects"
         des="My Projects"
       />
     </div>
@@ -28,8 +28,8 @@ const Projects = () => (
         link="https://movie-app-v3rg.onrender.com/"
       />
       <ProjectsCard
-        title="Disney plush clone"
-        des=" This app is a clone of Disney plus website. I created this app using react and redux"
+        title="Disney plus clone"
+        des=" This app is a clone of Disney plus website. I created this app using react and redux."
         src={disney}
         gitLink="https://github.com/gsmalik030/disney-with-react"
         link="https://disneyplus-with-react.onrender.com/"
@@ -43,7 +43,7 @@ const Projects = () => (
       />
       <ProjectsCard
         title="Ruby Resorts"
-        des="Ruby resorts is a hotel reservation website built with react and ruby on the rails"
+        des="Ruby resorts is a hotel reservation website built with react and ruby on the rails."
         src={rubyResorts}
         gitLink="https://github.com/anthonymr/ruby-resorts-frontend"
         link="https://ruby-resorts-front-end.onrender.com/"

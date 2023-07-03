@@ -8,17 +8,13 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [messages, setMessages] = useState('');
 
-  // ================= Error Messages Start here =================
   const [errClientName, setErrClientName] = useState(false);
   const [errEmail, setErrEmail] = useState(false);
   const [errMessages, setErrMessage] = useState(false);
-  // ================= Error Messages End here ===================
   const [seuccessMsg, setSuccessMsg] = useState('');
-  // ================= Email Validation Start here ===============
   const EmailValidation = (email) => String(email)
     .toLowerCase()
     .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
-  // ================= Email Validation End here =================
 
   const handleName = (e) => {
     setClientName(e.target.value);
@@ -87,9 +83,9 @@ const Contact = () => {
           </p>
           <p className="flex justify-between w-full text-lg text-[#ccc] py-4 border-b-[1px] border-b-zinc-800">
             <span className="bg-designColor text-gray-700 text-sm font-titleFont font-medium px-2 rounded-md flex items-center justify-center">
-              Freelance:
+              Job:
             </span>
-            Abailable
+            Open to work
           </p>
         </div>
       </div>

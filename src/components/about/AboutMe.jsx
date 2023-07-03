@@ -13,8 +13,8 @@ const AboutMe = () => (
     <div className="w-full md:w-1/2 p-6">
       <ul className="flex flex-col gap-1">
         <li className="text-zinc-400 text-base font-normal flex justify-between items-center border-b-[1px] border-gray-800 py-2">
-          <span className="bg-designColor text-black uppercase px-4 py-[1px] rounded-md">Age:</span>
-          35
+          <span className="bg-designColor text-black uppercase px-4 py-[1px] rounded-md">Name:</span>
+          Ghulam Subbhani
         </li>
         <li className="text-zinc-400 text-base font-normal flex justify-between items-center border-b-[1px] border-gray-800 py-2">
           <span className="bg-designColor text-black uppercase px-4 py-[1px] rounded-md">Residence:</span>
@@ -22,7 +22,7 @@ const AboutMe = () => (
         </li>
         <li className="text-zinc-400 text-base font-normal flex justify-between items-center border-b-[1px] border-gray-800 py-2">
           <span className="bg-designColor text-black uppercase px-4 py-[1px] rounded-md">Address:</span>
-          Druban South Africa
+          Durban
         </li>
       </ul>
     </div>

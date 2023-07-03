@@ -19,7 +19,7 @@ const Left = () => {
   };
 
   const [text] = useTypewriter({
-    words: ['Web Developer', 'Full Stack Developer', 'UI Designer'],
+    words: ['Full Stack Developer', 'Ruby on Rails ', 'React and Redux', 'UI Designer'],
     loop: true,
     typeSpeed: 30,
     deleteSpeed: 25,
