@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { AiFillTwitterCircle } from 'react-icons/ai';
 import { FiMail, FiSend } from 'react-icons/fi';
 import bannerImg from '../../assets/images/bannerImg.svg';
-import CV from '../../assets/gsmalik-cv.pdf';
+import CV from '../../assets/Ghulam_subbhani_Resume.pdf';
 
 const Left = () => {
   const handleEmailClick = () => {
