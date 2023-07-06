@@ -44,18 +44,24 @@ const Left = () => {
             <Cursor cursorBlinking={false} cursorStyle="|" />
           </p>
           <div className="flex justify-center gap-2 mt-2">
-            <span className="hover:text-designColor2 duration-300 cursor-pointer text-xl">
-              <FaGithub />
-            </span>
-            <span className="hover:text-designColor2 duration-300 cursor-pointer text-xl">
-              <FaLinkedin />
-            </span>
-            <span className="hover:text-designColor2 duration-300 cursor-pointer text-xl">
-              <AiFillTwitterCircle />
-            </span>
-            <span className="hover:text-designColor2 duration-300 cursor-pointer text-xl">
+            <a target='blank' href="https://github.com/gsmalik030">
+              <span className="hover:text-designColor2 duration-300 cursor-pointer text-xl">
+                <FaGithub />
+              </span>
+            </a>
+            <a target='blank' href="https://www.linkedin.com/in/gsmalik030/">
+              <span className="hover:text-designColor2 duration-300 cursor-pointer text-xl">
+                <FaLinkedin />
+              </span>
+            </a>
+            <a target='blank' href="https://twitter.com/GSubbhani">
+              <span className="hover:text-designColor2 duration-300 cursor-pointer text-xl">
+                <AiFillTwitterCircle />
+              </span>
+            </a>
+            <button type="button" onClick={handleEmailClick} className="hover:text-designColor2 duration-300 cursor-pointer text-xl">
               <FiMail />
-            </span>
+            </button>
           </div>
         </div>
         <div className="flex h-14">
