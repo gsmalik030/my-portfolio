@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from '../home/Title';
 import movieApp from '../../assets/images/movie-app.jpg';
-import todo from '../../assets/images/todo.jpg';
+import todo from '../../assets/images/math.jpg';
 import disney from '../../assets/images/disney.jpg';
 import covid19 from '../../assets/images/covid19.jpg';
 import rubyResorts from '../../assets/images/rubyresorts.jpg';
@@ -57,10 +57,10 @@ const Projects = () => (
       />
       <ProjectsCard
         title="Todo app"
-        des=" This is an app to keep record of your daily tasks. In this you can add tasks and mark them completed and delete them if you want."
+        des="Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations."
         src={todo}
-        gitLink="https://github.com/gsmalik030/todo-list-project"
-        link="https://gsmalik030.github.io/todo-list-project/dist/index.html"
+        gitLink="https://github.com/gsmalik030/Math-Magicians"
+        link="https://math-magicians-ohr8.onrender.com"
       />
     </div>
   </section>

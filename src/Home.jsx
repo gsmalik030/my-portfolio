@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaUser, FaEnvelope } from 'react-icons/fa';
 import { IoIosPaper } from 'react-icons/io';
-import { MdWork } from 'react-icons/md';
+import { MdWork, MdOutlineClose } from "react-icons/md";
 import { BsTelephonePlusFill } from 'react-icons/bs';
 import Left from './components/home/Left';
+import Sidenav from "./components/home/sidenav/Sidenav";
 import About from './components/about/About';
 import Resume from './components/resume/Resume';
 import Projects from './components/projects/Projects';
@@ -15,6 +16,16 @@ const Home = () => {
   const [resume, setResume] = useState(false);
   const [projects, setProjects] = useState(false);
   const [contact, setContact] = useState(false);
+  const [sidenav, setSidenav] = useState(false);
+  const ref = useRef();
+
+  useEffect(() => {
+    document.body.addEventListener("click", (e) => {
+      if (e.target.contains(ref.current)) {
+        setSidenav(false);
+      }
+    });
+  }, []);
 
   const handleClick = () => {
     window.location.href = `tel:${'+27728331515'}`;
@@ -174,7 +185,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* <div
+      <div
           onClick={() => setSidenav(true)}
           className="w-20 h-20 bg-bodyColor absolute top-10 left-10 rounded-3xl
           lgl:hidden flex justify-center items-center cursor-pointer z-20 group"
@@ -189,7 +200,28 @@ const Home = () => {
              -translate-x-3.5 group-hover:translate-x-0 transition-transform
               duration-300 group-hover:bg-designColor"></span>
           </div>
-        </div> */}
+        </div>
+        {sidenav && (
+          <div className="w-full lgl:hidden h-screen fixed top-0 left-0 bg-black bg-opacity-50 z-50">
+            <div className="w-96 h-full relative">
+              <motion.div
+                ref={ref}
+                initial={{ x: -500, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="w-full h-full bg-bodyColor overflow-y-scroll scrollbar-thin scrollbar-thumb-[#646464]"
+              >
+                <Sidenav />
+                <span
+                  onClick={() => setSidenav(false)}
+                  className="absolute top-0 -right-16 w-12 h-12 bg-bodyColor text-2xl text-textColor hover:text-designColor duration-300 cursor-pointer flex items-center justify-center z-50"
+                >
+                  <MdOutlineClose />
+                </span>
+              </motion.div>
+            </div>
+          </div>
+        )}
     </div>
   );
 };
