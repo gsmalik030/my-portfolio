@@ -6,7 +6,7 @@ const AboutMe = () => (
       <div className="py-6">
         <h2 className="font-semibold mb-1 text-2xl">Hello! I am Ghulam Subbhani</h2>
         <p className="leading-6 text-xl ">
-          a passionate web developer with expertise in both React and Ruby on Rails.
+        a Full-Stack Software Engineer who has recently completed my education at Microverse. With a strong foundation in JavaScript, React, Ruby, and Ruby on Rails, I'm excited to embark on a career in the dynamic and ever-evolving field of software development.
         </p>
       </div>
     </div>
