@@ -188,7 +188,7 @@ const Home = () => {
       <button
         type="button"
         onClick={() => setSidenav(true)}
-        className="w-20 h-20 bg-green-600 bg-opacity-50 fixed top-10 left-10 rounded-3xl
+        className="w-14 h-14 bg-green-600 bg-opacity-50 fixed top-10 left-10 rounded-3xl
           lgl:hidden flex justify-center items-center cursor-pointer z-20 group"
       >
         <div className="flex flex-col gap-1.5 overflow-hidden">
@@ -219,7 +219,7 @@ const Home = () => {
             <button
               type="button"
               onClick={() => setSidenav(false)}
-              className="absolute top-0 -left-0 w-12 h-12 bg-bodyColor text-2xl text-textColor hover:text-designColor duration-300 cursor-pointer flex items-center justify-center z-500"
+              className="absolute top-0 -right-0 w-12 h-12 bg-bodyColor text-2xl text-textColor hover:text-designColor duration-300 cursor-pointer flex items-center justify-center z-500"
             >
               <MdOutlineClose />
             </button>
