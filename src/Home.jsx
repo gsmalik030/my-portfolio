@@ -2,10 +2,10 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaUser, FaEnvelope } from 'react-icons/fa';
 import { IoIosPaper } from 'react-icons/io';
-import { MdWork, MdOutlineClose } from "react-icons/md";
+import { MdWork, MdOutlineClose } from 'react-icons/md';
 import { BsTelephonePlusFill } from 'react-icons/bs';
 import Left from './components/home/Left';
-import Sidenav from "./components/home/sidenav/Sidenav";
+import Sidenav from './components/home/sidenav/Sidenav';
 import About from './components/about/About';
 import Resume from './components/resume/Resume';
 import Projects from './components/projects/Projects';
@@ -20,7 +20,7 @@ const Home = () => {
   const ref = useRef();
 
   useEffect(() => {
-    document.body.addEventListener("click", (e) => {
+    document.body.addEventListener('click', (e) => {
       if (e.target.contains(ref.current)) {
         setSidenav(false);
       }
@@ -185,43 +185,48 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div
-          onClick={() => setSidenav(true)}
-          className="w-20 h-20 bg-green-600 bg-opacity-50 fixed top-10 left-10 rounded-3xl
+      <button
+        type="button"
+        onClick={() => setSidenav(true)}
+        className="w-20 h-20 bg-green-600 bg-opacity-50 fixed top-10 left-10 rounded-3xl
           lgl:hidden flex justify-center items-center cursor-pointer z-20 group"
-        >
-          <div className="flex flex-col gap-1.5 overflow-hidden">
-            <span className="w-8 h-[2px] bg-textColor inline-block
+      >
+        <div className="flex flex-col gap-1.5 overflow-hidden">
+          <span className="w-8 h-[2px] bg-textColor inline-block
             -translate-x-2 group-hover:translate-x-0 transition-transform
-            duration-300 group-hover:bg-designColor"></span>
-            <span className="w-8 h-[2px] bg-textColor inline-block
-            group-hover:bg-designColor duration-300"></span>
-            <span className="w-8 h-[2px] bg-textColor inline-block
+            duration-300 group-hover:bg-designColor"
+          />
+          <span className="w-8 h-[2px] bg-textColor inline-block
+            group-hover:bg-designColor duration-300"
+          />
+          <span className="w-8 h-[2px] bg-textColor inline-block
              -translate-x-3.5 group-hover:translate-x-0 transition-transform
-              duration-300 group-hover:bg-designColor"></span>
-          </div>
+              duration-300 group-hover:bg-designColor"
+          />
         </div>
-        {sidenav && (
-          <div className="w-full lgl:hidden h-screen fixed top-0 left-0 bg-black bg-opacity-50 z-50">
-            <div className="w-96 h-full relative">
-              <motion.div
-                ref={ref}
-                initial={{ x: -500, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5 }}
-                className="w-full h-full bg-bodyColor overflow-y-scroll scrollbar-thin scrollbar-thumb-[#646464]"
-              >
-                <Sidenav />
-                <button
-                  onClick={() => setSidenav(false)}
-                  className="absolute top-0 -right-14 w-12 h-12 bg-bodyColor text-2xl text-textColor hover:text-designColor duration-300 cursor-pointer flex items-center justify-center z-50"
-                >
-                  <MdOutlineClose />
-                </button>
-              </motion.div>
-            </div>
-          </div>
-        )}
+      </button>
+      {sidenav && (
+      <div className="w-full lgl:hidden h-screen fixed top-0 left-0 bg-black bg-opacity-50 z-50">
+        <div className="w-96 h-full relative">
+          <motion.div
+            ref={ref}
+            initial={{ x: -500, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="w-full h-full bg-bodyColor overflow-y-scroll scrollbar-thin scrollbar-thumb-[#646464]"
+          >
+            <Sidenav />
+            <button
+              type="button"
+              onClick={() => setSidenav(false)}
+              className="absolute top-0 -right-14 w-12 h-12 bg-bodyColor text-2xl text-textColor hover:text-designColor duration-300 cursor-pointer flex items-center justify-center z-50"
+            >
+              <MdOutlineClose />
+            </button>
+          </motion.div>
+        </div>
+      </div>
+      )}
     </div>
   );
 };

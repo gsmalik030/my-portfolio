@@ -31,8 +31,8 @@ const Projects = () => (
         title="My Budget App"
         des="This is an app where you can keep record of your monthly spending and create your budget."
         src={budget}
-        gitLink="https://github.com/gsmalik030/disney-with-react"
-        link="https://disneyplus-with-react.onrender.com/"
+        gitLink="https://github.com/gsmalik030/my-budget-app"
+        link="https://my-budget-app-nhy1.onrender.com/"
       />
       <ProjectsCard
         title="Covid 19 worldometer"
