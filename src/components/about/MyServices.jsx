@@ -15,7 +15,7 @@ const MyServices = () => (
     <ServicesCard
       icons={<SiAntdesign />}
       title="Web Design"
-      subTitle="Transforming ideas into captivating web experiences through thoughtful design and meticulous attention to detail"
+      subTitle="Transforming ideas into captivating web experiences through thoughtful design and meticulous attention to detail."
     />
     <ServicesCard
       icons={<BsServer />}
