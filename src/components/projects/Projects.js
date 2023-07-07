@@ -50,14 +50,14 @@ const Projects = () => (
       />
       <ProjectsCard
         title="Leader Board"
-        des=" Leaderboard is a web app tp keep record of the score for differen players for any game."
+        des=" Leaderboard is a web app to keep record of the score for different players for any game."
         src={leaderboard}
         gitLink="https://github.com/gsmalik030/leaderboard"
         link="https://leaderboard-7ozi.onrender.com/"
       />
       <ProjectsCard
         title="Todo app"
-        des="Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations."
+        des="Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to Make simple calculations."
         src={todo}
         gitLink="https://github.com/gsmalik030/Math-Magicians"
         link="https://math-magicians-ohr8.onrender.com"
