@@ -56,7 +56,7 @@ const Projects = () => (
         link="https://leaderboard-7ozi.onrender.com/"
       />
       <ProjectsCard
-        title="Todo app"
+        title="Math Magicians"
         des="Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to Make simple calculations."
         src={todo}
         gitLink="https://github.com/gsmalik030/Math-Magicians"
