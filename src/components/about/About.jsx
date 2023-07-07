@@ -10,7 +10,7 @@ const About = () => (
     <AboutMe />
     <Title title="My" subTitle="Services" />
     <MyServices />
-    <Title title="Fun" subTitle="Fact" />
+    <Title title="Some" subTitle="Facts" />
     <FunFact />
   </section>
 );
