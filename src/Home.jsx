@@ -219,7 +219,7 @@ const Home = () => {
             <button
               type="button"
               onClick={() => setSidenav(false)}
-              className="absolute top-0 -right-0 w-12 h-12 bg-bodyColor text-2xl text-textColor hover:text-designColor duration-300 cursor-pointer flex items-center justify-center z-50"
+              className="absolute top-0 -left-0 w-12 h-12 bg-bodyColor text-2xl text-textColor hover:text-designColor duration-300 cursor-pointer flex items-center justify-center z-500"
             >
               <MdOutlineClose />
             </button>
