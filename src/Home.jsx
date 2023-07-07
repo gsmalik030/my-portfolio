@@ -31,6 +31,10 @@ const Home = () => {
     window.location.href = `tel:${'+27728331515'}`;
   };
 
+  const handleSelect = () => {
+    setSidenav(false);
+  };
+
   return (
     <div className="w-full lgl:w-[85%] h-full lgl:h-[85%] bg-transparent text-white z-50 flex items-start justify-between p-4 lgl:p-0">
       <div className="w-16 h-96 bg-transparent hidden lgl:flex flex-col gap-4">
@@ -188,7 +192,7 @@ const Home = () => {
       <button
         type="button"
         onClick={() => setSidenav(true)}
-        className="w-14 h-14 bg-green-600 bg-opacity-50 fixed top-10 left-10 rounded-3xl
+        className="w-14 h-14 bg-green-600 bg-opacity-50 fixed top-5 left-5 rounded-xl
           lgl:hidden flex justify-center items-center cursor-pointer z-20 group"
       >
         <div className="flex flex-col gap-1.5 overflow-hidden">
@@ -213,9 +217,9 @@ const Home = () => {
             initial={{ x: -500, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="w-full h-full bg-bodyColor overflow-y-scroll scrollbar-thin scrollbar-thumb-[#646464]"
+            className="w-full h-full bg-bodyColor  scrollbar-thin scrollbar-thumb-[#646464]"
           >
-            <Sidenav />
+            <Sidenav onSelect={handleSelect} />
             <button
               type="button"
               onClick={() => setSidenav(false)}
