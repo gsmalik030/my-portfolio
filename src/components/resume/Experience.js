@@ -6,10 +6,10 @@ const Experience = () => (
   <motion.div
     initial={{ opacity: 0 }}
     animate={{ opacity: 1, transition: { duration: 0.5 } }}
-    className="py-12 font-titleFont flex gap-10w-full flex flex-col lgl:flex-row gap-1 lgl:gap-10"
+    className="w-full flex flex-col lgl:flex-row gap-1 lgl:gap-10"
   >
     <div>
-      <div className="flex flex-col lgl:flex-row gap-4">
+      <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
         <p className="text-sm text-designColor tracking-[4px]">2020 - 2023</p>
         <h2 className="text-4xl font-bold">Experience</h2>
       </div>
@@ -29,7 +29,7 @@ const Experience = () => (
       </div>
     </div>
     <div>
-      <div className="flex flex-col gap-4">
+      <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
         <p className="text-sm text-designColor tracking-[4px]">2022 - 2023</p>
         <h2 className="text-4xl font-bold">Volunteer</h2>
       </div>
