@@ -2,7 +2,7 @@ import React from 'react';
 import Title from '../home/Title';
 import movieApp from '../../assets/images/movie-app.jpg';
 import todo from '../../assets/images/math.jpg';
-import budget from '../../assets/images/budget.jpg';
+import disney from '../../assets/images/disney.jpg';
 import covid19 from '../../assets/images/covid19.jpg';
 import rubyResorts from '../../assets/images/rubyresorts.jpg';
 import ProjectsCard from './ProjectsCard';
@@ -29,10 +29,10 @@ const Projects = () => (
       />
       <ProjectsCard
         title="My Budget App"
-        des="This is an app where you can keep record of your monthly spending and create your budget."
-        src={budget}
-        gitLink="https://github.com/gsmalik030/my-budget-app"
-        link="https://my-budget-app-nhy1.onrender.com/"
+        des="This app is a clone of Disney plus website. I created this app using react and redux"
+        src={disney}
+        gitLink="https://github.com/gsmalik030/disney-with-react"
+        link="https://disneyplus-with-react.onrender.com/"
       />
       <ProjectsCard
         title="Covid 19 worldometer"
